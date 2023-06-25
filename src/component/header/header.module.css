@@ -1,0 +1,97 @@
+.container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(85, 82, 82);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 200px;
+    z-index: 100000;
+}
+
+/* .logo{
+    width: 280px;
+    height: 280px;
+    margin-top: 140px;
+} */
+
+.img {
+    border-radius: 50%;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 20px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    /* .container {
+        height: 80px;
+        padding: 0 8px;
+    } */
+
+    .links {
+        font-size: 16px;
+        gap: 16px;
+    }
+    .img {
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width: 510px) {
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-wrap: wrap;
+    }
+    .img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 701px) {
+    .container {
+        height: 90px;
+        padding: 0 10px;
+    }
+
+    .links {
+        font-size: 18px;
+        gap: 18px;
+    }
+}
+
+/* Additional Media Queries for Specific Cell Phones */
+
+/* iPhone X and similar devices */
+@media (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    /* Adjust styles for iPhone X */
+}
+
+/* Samsung Galaxy S9 and similar devices */
+@media (device-width: 360px) and (device-height: 740px) and (-webkit-device-pixel-ratio: 4) {
+    /* Adjust styles for Samsung Galaxy S9 */
+}
+
+/* Google Pixel 2 and similar devices */
+@media (device-width: 411px) and (device-height: 731px) and (-webkit-device-pixel-ratio: 2.625) {
+    /* Adjust styles for Google Pixel 2 */
+}
+
+/* Add more media queries as needed for other specific cell phone models */
+
+/* General Mobile Styles */
+@media (max-width: 700px) {
+    /* Adjust styles for general mobile devices */
+}

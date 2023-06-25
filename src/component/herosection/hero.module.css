@@ -1,0 +1,191 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 0 33px;
+    margin-top: 100px;
+}
+
+.item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    padding: 0 0 0 12px;
+    font-size: 45px;
+    background: linear-gradient(to bottom, #194c33, #777474);
+}
+
+.img {
+    width: 100%;
+    border-radius: 30px;
+    height: 430px;
+    object-fit: contain;
+    animation: move 2s infinite ease alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.desc {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+}
+
+.btn {
+    border: none;
+    background: linear-gradient(to bottom, #194c33, #777474);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: fit-content;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:active {
+    background-color: #3e8e41;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 0 16px;
+    }
+
+    .item {
+        flex: none;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .desc {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 761px) {
+    .container {
+        gap: 30px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .desc {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .btn {
+        font-size: 21px;
+        padding: 10px 22px;
+    }
+}
+@media (max-width: 690px) {
+    .title {
+        font-size: 32px;
+        padding: 14px 7px;
+        width: fit-content;
+        margin-top: 22px;
+    }
+
+    .desc {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .btn {
+        font-size: 21px;
+        padding: 10px 22px;
+    }
+}
+
+/* Additional Media Queries for Specific Cell Phones */
+
+/* iPhone X and similar devices */
+@media (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    /* Adjust styles for iPhone X */
+}
+
+/* Samsung Galaxy S9 and similar devices */
+@media (device-width: 360px) and (device-height: 740px) and (-webkit-device-pixel-ratio: 4) {
+    /* Adjust styles for Samsung Galaxy S9 */
+}
+
+/* Google Pixel 2 and similar devices */
+@media (device-width: 411px) and (device-height: 731px) and (-webkit-device-pixel-ratio: 2.625) {
+    /* Adjust styles for Google Pixel 2 */
+}
+
+/* Add more media queries as needed for other specific cell phone models */
+
+/* General Mobile Styles
+/* General Mobile Styles */
+@media (max-width: 480px) {
+    .container {
+        gap: 30px;
+        padding: 0 12px;
+    }
+
+    .item {
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .img {
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .desc {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}

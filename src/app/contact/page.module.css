@@ -1,0 +1,143 @@
+.container {
+    padding: 12px 22px;
+    height: 73vh;
+    margin-top: 110px;
+    overflow-y: hidden;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    padding: 12px 22px;
+}
+
+.imgContainer {
+    flex: 1;
+    height: 400px;
+    position: relative;
+}
+
+.image {
+    object-fit: contain;
+    animation: move 2s infinite ease alternate;
+}
+
+.map {
+    flex: 1;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0px) scale(1.03);
+    }
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input,
+.textArea {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #bbb;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.btn {
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:active {
+    background-color: #3e8e41;
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .map {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+/* Cell Phones */
+@media only screen and (max-width: 599px) {
+    .container {
+        height: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .map {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
